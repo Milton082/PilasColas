@@ -6,9 +6,14 @@ import java.util.EmptyStackException;
 public class PilaGenerica<T> {
 
     private NodoGenerico<T> top;
+    public NodoGenerico<T> size;
 
     public PilaGenerica() {
         top = null;
+    }
+
+    public int size(){
+        return 0;
     }
 
     public void push(T dato) {

@@ -3,6 +3,7 @@ package Materia.Models;
 public class Pantalla {
     private String nombre;
     private String ruta;
+    public int size;
 
     public Pantalla(String nombre, String ruta) {
         this.nombre = nombre;
@@ -24,6 +25,5 @@ public class Pantalla {
     public void setRuta(String ruta) {
         this.ruta = ruta;
     }
-
 
 }
