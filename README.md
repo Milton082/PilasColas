@@ -8,3 +8,6 @@ Java project to learn about pilas & nodos
 
 ### v2.0.0
 - Initial version
+
+## v2.0.1
+- Clases colas

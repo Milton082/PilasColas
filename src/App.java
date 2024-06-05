@@ -47,25 +47,23 @@ public class App {
         System.out.println("Elemento eliminado de la cola es: " + cola.remove());
         System.out.println("Elemento en la clase de la cola es: " + cola.peek());
 
-
         System.out.println();
 
         ColaGenerica<Pantalla> colaGenerica = new ColaGenerica<>();
-        System.out.println("El numero de elemento es: "+ colaGenerica.getsize() + " Elementos");
         colaGenerica.addNode(new Pantalla("Home page", "/home"));
         colaGenerica.addNode(new Pantalla("Menu Page", "/home/menu"));
         colaGenerica.addNode(new Pantalla("Settings Page", "/home/menu/setings"));
-                        ColaGenerica<Double> colaDouble = new ColaGenerica<>();
-                        System.out.println("");
-                        colaDouble.addNode(1.5);
-                        colaDouble.addNode(43.0);
-                        colaDouble.addNode(5.42);
-                        colaDouble.addNode(5.0);
-                        System.out.println("Tamaño de la cola  "+colaDouble.getsize());
-                        System.out.println("Elemento al inicio de la colaInt "+colaDouble.peek());
-                        System.out.println("Eliminado el primer objeto"+colaDouble.remove());
-                        System.out.println("Elemento al inicio de la colaInt "+colaDouble.peek());
-                        System.out.println("Tamaño de la cola  "+colaDouble.getsize());
-                    }
-    }
 
+        ColaGenerica<Double> colaDouble = new ColaGenerica<>();
+        System.out.println("");
+        colaDouble.addNode(10.8);
+        colaDouble.addNode(6.0);
+        colaDouble.addNode(3.90);
+        colaDouble.addNode(4.69);
+        System.out.println("Elememtos de la cola  " + colaDouble.getsize());
+        System.out.println("Elemento al inicio de la colaInt " + colaDouble.peek());
+        System.out.println("Eliminado el primer objeto" + colaDouble.remove());
+        System.out.println("Elemento al inicio de la colaInt " + colaDouble.peek());
+        System.out.println("Tamaño de la cola  " + colaDouble.getsize());
+    }
+}
