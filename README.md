@@ -7,7 +7,12 @@ Java project to learn about pilas & nodos
 ## Versions
 
 ### v2.0.0
-- Initial version
+- Initial version.
 
 ## v2.0.1
-- Clases colas
+- Clases colas.
+
+## v2.0.2
+- Estructuras Lineales – Ejercicios.
+
+
