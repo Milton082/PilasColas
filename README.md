@@ -15,4 +15,7 @@ Java project to learn about pilas & nodos
 ## v2.0.2
 - Estructuras Lineales – Ejercicios.
 
+## v2.0.3
+- Estructuras Lineales – Ejercicios LinkedList.
+
 

@@ -3,6 +3,9 @@ import java.util.Stack;
 import Materia.Colas.Cola;
 import Materia.Ejercicio_01_sing.Signo;
 import Materia.Ejercicio_02_sorting.OrdenarStack;
+import Materia.Ejercicio_03_linkedLists.ListasEnlazadas;
+import Materia.ListasEnlazadas.ListaEnlazada;
+import Materia.Models.Node;
 import Materia.Models.Pantalla;
 import Materia.Pilas.Pila;
 import Materia.Pilas.PilaGenerica;
@@ -71,7 +74,7 @@ public class App {
          * colaDouble.addNode(6.0);
          * colaDouble.addNode(3.90);
          * colaDouble.addNode(4.69);
-         * System.out.println("Elememtos de la cola  " + colaDouble.getsize());
+         * System.out.println("Elememtos de la cola  " + colaDouble.gesize(t));
          * System.out.println("Elemento al inicio de la colaInt " + colaDouble.peek());
          * System.out.println("Eliminado el primer objeto" + colaDouble.remove());
          * System.out.println("Elemento al inicio de la colaInt " + colaDouble.peek());
@@ -109,6 +112,37 @@ public class App {
         System.out.println("Stack después de ordenar: " + stack);
 
         System.out.println();
+
+         //Lista ENLAZADA
+            ListaEnlazada lista = new ListaEnlazada();
+            lista.addNode(1);
+            lista.addNode(4);
+            lista.addNode(3);
+            lista.addNode(6);
+            lista.print();
+            lista.deleteNode(1);
+            lista.print();
+            lista.deleteNode(3);
+            lista.print();
+
+            System.out.println();
+            
+         //Imprimir listas Enlazadas
+         ListasEnlazadas lista2 = new ListasEnlazadas();
+         lista2.addNode(3);
+         lista2.addNode(42);
+         lista2.addNode(23);
+         lista2.addNode(13);
+         lista2.addNode(44);
+        
+         int N = 1; // Posición desde el final
+         Node resultado = lista2.encotrarNode(N);
+         if (resultado != null) {
+             System.out.println("El nodo en la posición " + N + " desde el final es: " + resultado.value);
+         } else {
+             System.out.println("La posición " + N + " es inválida.");
+         }
     }
 }
+
 
